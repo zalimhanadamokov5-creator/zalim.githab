@@ -1,0 +1,595 @@
+/* Базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Шапка */
+header {
+    background-color: #1a5fb4;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    font-size: 2em;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    margin-bottom: 3px;
+}
+
+.logo p {
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+nav a.active {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Основной контент */
+main {
+    padding: 30px 0;
+    min-height: 70vh;
+}
+
+/* Главная страница */
+.welcome {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #e8f4ff;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.welcome h2 {
+    color: #1a5fb4;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.welcome p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    background-color: #1a5fb4;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background-color: #154b8f;
+}
+
+.btn-small {
+    background-color: #1a5fb4;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+/* Особенности */
+.features {
+    margin-bottom: 40px;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1a5fb4;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.feature i {
+    font-size: 2.5em;
+    color: #1a5fb4;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Популярные курсы */
+.popular-courses {
+    margin-bottom: 40px;
+}
+
+.popular-courses h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1a5fb4;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.course {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.course-header {
+    background-color: #1a5fb4;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-header h3 {
+    font-size: 1.1em;
+}
+
+.price {
+    background-color: rgba(255,255,255,0.2);
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+}
+
+.course p {
+    padding: 15px;
+    margin: 0;
+}
+
+.course a {
+    margin: 0 15px 15px;
+    display: inline-block;
+}
+
+/* Как работает */
+.how-it-works {
+    margin-bottom: 40px;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1a5fb4;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.step {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.step-num {
+    width: 40px;
+    height: 40px;
+    background-color: #1a5fb4;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-weight: bold;
+}
+
+/* Страница курсов */
+.page-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+.page-header h1 {
+    color: #1a5fb4;
+    margin-bottom: 10px;
+}
+
+.courses-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.course-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.course-type {
+    background-color: #1a5fb4;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+.course-card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.teacher {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    color: #666;
+}
+
+.course-card .btn {
+    width: 100%;
+    text-align: center;
+}
+
+.special-offer {
+    background-color: #e8f4ff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Страница "О нас" */
+.about-intro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    flex: 2;
+    min-width: 300px;
+}
+
+.about-text h2 {
+    color: #1a5fb4;
+    margin-bottom: 15px;
+}
+
+.about-stats {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 200px;
+}
+
+.stat-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.stat-number {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    color: #1a5fb4;
+    margin-bottom: 5px;
+}
+
+.mission-box {
+    background-color: #e8f4ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.mission-box h2 {
+    color: #1a5fb4;
+    margin-bottom: 10px;
+}
+
+.advantages {
+    margin-bottom: 30px;
+}
+
+.advantages h2 {
+    color: #1a5fb4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.advantage {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.advantage i {
+    font-size: 2em;
+    color: #1a5fb4;
+    margin-bottom: 15px;
+}
+
+.advantage h3 {
+    margin-bottom: 10px;
+}
+
+.paid-courses {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.course-item {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.course-item i {
+    color: #1a5fb4;
+}
+
+.contacts {
+    margin-bottom: 30px;
+}
+
+.contacts h2 {
+    color: #1a5fb4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact-item {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.contact-item i {
+    font-size: 1.5em;
+    color: #1a5fb4;
+}
+
+.contact-item h3 {
+    margin-bottom: 5px;
+}
+
+/* Подвал */
+footer {
+    background-color: #333;
+    color: #ccc;
+    padding: 30px 0 20px;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-info h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-info p {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+.footer-links h4 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+    font-size: 0.9em;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .about-intro {
+        flex-direction: column;
+    }
+    
+    .course-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .course-item {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+    
+    .contact-list {
+        flex-direction: column;
+    }
+    
+    .contact-item {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .features-grid,
+    .courses-grid,
+    .steps,
+    .advantages-grid,
+    .courses-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .logo h1 {
+        font-size: 1.3em;
+    }
+    
+    nav a {
+        padding: 6px 10px;
+        font-size: 0.9em;
+    }
+    
+    .welcome {
+        padding: 20px 15px;
+    }
+    
+    .welcome h2 {
+        font-size: 1.5em;
+    }
+}
